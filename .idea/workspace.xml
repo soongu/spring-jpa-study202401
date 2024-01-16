@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd70c96d-240c-4025-8097-d3af01fa0f9b" name="변경" comment="#2. JPA 기초">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap02_querymethod/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap02_querymethod/repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap02_querymethod/repository/StudentRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="fd70c96d-240c-4025-8097-d3af01fa0f9b" name="변경" comment="#3. JPA 쿼리메서드 엔터티 생성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap03_pagination/repository/StudentPageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap03_pagination/repository/StudentPageRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap01/repository/ProductRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap01/repository/ProductRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap02_querymethod/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap02_querymethod/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap02_querymethod/repository/StudentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap02_querymethod/repository/StudentRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,7 +63,15 @@
     "Gradle.ProductRepositoryTest.findOneTest.executor": "Run",
     "Gradle.ProductRepositoryTest.modifyTest.executor": "Run",
     "Gradle.ProductRepositoryTest.saveTest.executor": "Run",
+    "Gradle.StudentPageRepositoryTest.basicPageTest.executor": "Run",
+    "Gradle.StudentPageRepositoryTest.testSearchAndPagination.executor": "Run",
+    "Gradle.StudentRepositoryTest.deleteWithJPQLTest.executor": "Run",
+    "Gradle.StudentRepositoryTest.findByCityWithJPQL.executor": "Run",
+    "Gradle.StudentRepositoryTest.findByContainingTest.executor": "Run",
+    "Gradle.StudentRepositoryTest.findByNameTest.executor": "Run",
     "Gradle.StudentRepositoryTest.insertTest.executor": "Run",
+    "Gradle.StudentRepositoryTest.nativeSQLTest.executor": "Run",
+    "Gradle.StudentRepositoryTest.searchNameTest.executor": "Run",
     "Gradle.jpa 빌드.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -88,11 +105,13 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.study.jpa.chap03_pagination.repository" />
+      <recent name="com.study.jpa.chap02_querymethod.repository" />
       <recent name="com.study.jpa.chap01.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.StudentRepositoryTest.insertTest">
-    <configuration name="ProductRepositoryTest.deleteTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.StudentPageRepositoryTest.testSearchAndPagination">
+    <configuration name="StudentPageRepositoryTest.basicPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -105,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.study.jpa.chap01.repository.ProductRepositoryTest.deleteTest&quot;" />
+            <option value="&quot;com.study.jpa.chap03_pagination.repository.StudentPageRepositoryTest.basicPageTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -116,7 +135,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductRepositoryTest.findAllTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentPageRepositoryTest.testSearchAndPagination" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +148,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.study.jpa.chap01.repository.ProductRepositoryTest.findAllTest&quot;" />
+            <option value="&quot;com.study.jpa.chap03_pagination.repository.StudentPageRepositoryTest.testSearchAndPagination&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -140,7 +159,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductRepositoryTest.findOneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentRepositoryTest.deleteWithJPQLTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -153,7 +172,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.study.jpa.chap01.repository.ProductRepositoryTest.findOneTest&quot;" />
+            <option value="&quot;com.study.jpa.chap02_querymethod.repository.StudentRepositoryTest.deleteWithJPQLTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,7 +183,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="StudentRepositoryTest.insertTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentRepositoryTest.findByCityWithJPQL" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +196,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.study.jpa.chap02_querymethod.repository.StudentRepositoryTest.insertTest&quot;" />
+            <option value="&quot;com.study.jpa.chap02_querymethod.repository.StudentRepositoryTest.findByCityWithJPQL&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,26 +207,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="jpa.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.Main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="StudentRepositoryTest.searchNameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.study.jpa.chap02_querymethod.repository.StudentRepositoryTest.searchNameTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StudentRepositoryTest.insertTest" />
-        <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="Gradle.ProductRepositoryTest.findAllTest" />
-        <item itemvalue="Gradle.ProductRepositoryTest.findOneTest" />
-        <item itemvalue="Gradle.ProductRepositoryTest.deleteTest" />
+        <item itemvalue="Gradle.StudentPageRepositoryTest.testSearchAndPagination" />
+        <item itemvalue="Gradle.StudentPageRepositoryTest.basicPageTest" />
+        <item itemvalue="Gradle.StudentRepositoryTest.deleteWithJPQLTest" />
+        <item itemvalue="Gradle.StudentRepositoryTest.searchNameTest" />
+        <item itemvalue="Gradle.StudentRepositoryTest.findByCityWithJPQL" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +251,7 @@
       <updated>1705018989763</updated>
       <workItem from="1705018991791" duration="1064000" />
       <workItem from="1705020091669" duration="6786000" />
-      <workItem from="1705277372805" duration="2177000" />
+      <workItem from="1705277372805" duration="8569000" />
     </task>
     <task id="LOCAL-00001" summary="#1. 프로젝트 초기설정">
       <option name="closed" value="true" />
@@ -239,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705026978870</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#3. JPA 쿼리메서드 엔터티 생성">
+      <option name="closed" value="true" />
+      <created>1705279581854</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705279581854</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +286,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#1. 프로젝트 초기설정" />
     <MESSAGE value="#2. JPA 기초" />
-    <option name="LAST_COMMIT_MESSAGE" value="#2. JPA 기초" />
+    <MESSAGE value="#3. JPA 쿼리메서드 엔터티 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="#3. JPA 쿼리메서드 엔터티 생성" />
   </component>
 </project>
