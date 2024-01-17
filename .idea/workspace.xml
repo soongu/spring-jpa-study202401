@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd70c96d-240c-4025-8097-d3af01fa0f9b" name="변경" comment="#5. JPA 단방향 연관관계">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap04_relation/repository/DepartmentRepositoryTest.java" afterDir="false" />
+    <list default="true" id="fd70c96d-240c-4025-8097-d3af01fa0f9b" name="변경" comment="#6. JPA 양방향 연관관계">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap04_relation/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap04_relation/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap04_relation/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap04_relation/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap04_relation/repository/DepartmentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap04_relation/repository/DepartmentRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.DepartmentRepositoryTest.changeDeptTest.executor": "Run",
     "Gradle.DepartmentRepositoryTest.findDeptTest.executor": "Run",
     "Gradle.EmployeeRepositoryTest.findOneTest.executor": "Run",
     "Gradle.ProductRepositoryTest.deleteTest.executor": "Run",
@@ -115,7 +114,31 @@
       <recent name="com.study.jpa.chap01.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DepartmentRepositoryTest.findDeptTest">
+  <component name="RunManager" selected="Gradle.DepartmentRepositoryTest.changeDeptTest">
+    <configuration name="DepartmentRepositoryTest.changeDeptTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.study.jpa.chap04_relation.repository.DepartmentRepositoryTest.changeDeptTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="DepartmentRepositoryTest.findDeptTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,30 +177,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.study.jpa.chap04_relation.repository.EmployeeRepositoryTest.findOneTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="StudentPageRepositoryTest.basicPageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.study.jpa.chap03_pagination.repository.StudentPageRepositoryTest.basicPageTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -227,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DepartmentRepositoryTest.changeDeptTest" />
         <item itemvalue="Gradle.DepartmentRepositoryTest.findDeptTest" />
         <item itemvalue="Gradle.EmployeeRepositoryTest.findOneTest" />
         <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Gradle.StudentPageRepositoryTest.testSearchAndPagination" />
-        <item itemvalue="Gradle.StudentPageRepositoryTest.basicPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +244,7 @@
       <updated>1705018989763</updated>
       <workItem from="1705018991791" duration="1064000" />
       <workItem from="1705020091669" duration="6786000" />
-      <workItem from="1705277372805" duration="13705000" />
+      <workItem from="1705277372805" duration="14819000" />
     </task>
     <task id="LOCAL-00001" summary="#1. 프로젝트 초기설정">
       <option name="closed" value="true" />
@@ -287,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705369524330</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#6. JPA 양방향 연관관계">
+      <option name="closed" value="true" />
+      <created>1705451970719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705451970719</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +317,7 @@
     <MESSAGE value="#3. JPA 쿼리메서드 엔터티 생성" />
     <MESSAGE value="#4. JPA 페이징 처리" />
     <MESSAGE value="#5. JPA 단방향 연관관계" />
-    <option name="LAST_COMMIT_MESSAGE" value="#5. JPA 단방향 연관관계" />
+    <MESSAGE value="#6. JPA 양방향 연관관계" />
+    <option name="LAST_COMMIT_MESSAGE" value="#6. JPA 양방향 연관관계" />
   </component>
 </project>
