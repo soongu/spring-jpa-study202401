@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd70c96d-240c-4025-8097-d3af01fa0f9b" name="변경" comment="#6. JPA 양방향 연관관계">
+    <list default="true" id="fd70c96d-240c-4025-8097-d3af01fa0f9b" name="변경" comment="#7. JPA 양방향 연관관계 - 수정시 주의사항">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap05_manytomany/entity/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap05_manytomany/entity/Purchase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/jpa/chap05_manytomany/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap04_relation/repository/DepartmentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/jpa/chap04_relation/repository/DepartmentRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,6 +87,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -114,7 +120,7 @@
       <recent name="com.study.jpa.chap01.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DepartmentRepositoryTest.changeDeptTest">
+  <component name="RunManager" selected="Spring Boot.Main">
     <configuration name="DepartmentRepositoryTest.changeDeptTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -226,10 +232,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Gradle.DepartmentRepositoryTest.changeDeptTest" />
         <item itemvalue="Gradle.DepartmentRepositoryTest.findDeptTest" />
         <item itemvalue="Gradle.EmployeeRepositoryTest.findOneTest" />
-        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Gradle.StudentPageRepositoryTest.testSearchAndPagination" />
       </list>
     </recent_temporary>
@@ -244,7 +250,7 @@
       <updated>1705018989763</updated>
       <workItem from="1705018991791" duration="1064000" />
       <workItem from="1705020091669" duration="6786000" />
-      <workItem from="1705277372805" duration="14819000" />
+      <workItem from="1705277372805" duration="16402000" />
     </task>
     <task id="LOCAL-00001" summary="#1. 프로젝트 초기설정">
       <option name="closed" value="true" />
@@ -294,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705451970719</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#7. JPA 양방향 연관관계 - 수정시 주의사항">
+      <option name="closed" value="true" />
+      <created>1705454037816</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705454037816</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +332,7 @@
     <MESSAGE value="#4. JPA 페이징 처리" />
     <MESSAGE value="#5. JPA 단방향 연관관계" />
     <MESSAGE value="#6. JPA 양방향 연관관계" />
-    <option name="LAST_COMMIT_MESSAGE" value="#6. JPA 양방향 연관관계" />
+    <MESSAGE value="#7. JPA 양방향 연관관계 - 수정시 주의사항" />
+    <option name="LAST_COMMIT_MESSAGE" value="#7. JPA 양방향 연관관계 - 수정시 주의사항" />
   </component>
 </project>
